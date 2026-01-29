@@ -10,7 +10,7 @@ import {
   PageSectionScroller,
   PageSectionTitle,
 } from "@/components/ui/page";
-import Footer from "@/components/footer";
+import QuickSearch from "@/components/quick-search";
 
 export default async function Home() {
   const barbershops = await getBarbershops();
@@ -19,6 +19,7 @@ export default async function Home() {
     <div>
       <Header />
       <PageContainer>
+        <QuickSearch />
         <Image
           src={banner}
           alt="Agende nos melhores com a Aparatus"
